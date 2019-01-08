@@ -60,14 +60,49 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="OknoAdministratora1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OknoAdministratora1.Designer.cs">
+      <DependentUpon>OknoAdministratora1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OknoGoscia1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OknoGoscia1.Designer.cs">
+      <DependentUpon>OknoGoscia1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OknoPodaniaGoscia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OknoPodaniaGoscia.Designer.cs">
+      <DependentUpon>OknoPodaniaGoscia.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OknoAdministratora1.resx">
+      <DependentUpon>OknoAdministratora1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OknoGoscia1.resx">
+      <DependentUpon>OknoGoscia1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OknoPodaniaGoscia.resx">
+      <DependentUpon>OknoPodaniaGoscia.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -77,6 +112,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -88,15 +134,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Database1.mdf">
+    <Content Include="BazaDanych.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Database1_log.ldf">
+    <Content Include="BazaDanych_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>Database1.mdf</DependentUpon>
+      <DependentUpon>BazaDanych.mdf</DependentUpon>
     </Content>
   </ItemGroup>
   <ItemGroup>
@@ -110,6 +158,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
