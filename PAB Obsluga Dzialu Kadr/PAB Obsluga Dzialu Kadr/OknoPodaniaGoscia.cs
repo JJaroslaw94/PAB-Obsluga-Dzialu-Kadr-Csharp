@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,26 +13,36 @@ namespace PAB_Obsluga_Dzialu_Kadr
 {
     public partial class OknoPodaniaGoscia : Form
     {
-        int indexDzialu1;
+        
+        String indexStanowiska = "0";
         String stanowisko;
+        SqlDataAdapter sda;
+        SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\workspace\PAB-Obsluga-Dzialu-Kadr-Csharp\PAB Obsluga Dzialu Kadr\PAB Obsluga Dzialu Kadr\BazaDanych.mdf;Integrated Security=True");
+        SqlCommand Sq;
+        DataTable Stanowiska;
+
         public OknoPodaniaGoscia(String Stanowisko)
         {
             stanowisko = Stanowisko;
             InitializeComponent();
+            
+
+            sda = new SqlDataAdapter("select NAZWA_STANOWISKA, ID_DZIALU, ID_STANOWISKA from STANOWISKA", conn);
+            Stanowiska = new DataTable();
+            sda.Fill(Stanowiska);
+        
+            int ileStanowisk = Stanowiska.Rows.Count;
+            for (int i = 0; i < ileStanowisk; i++)
+            {
+                nAZWA_STANOWISKAComboBox.Items.Add(Convert.ToString(Stanowiska.Rows[i][0]));
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             OknoGoscia1 og1 = new OknoGoscia1();
             og1.Show();
-            this.Dispose();
-        }
-
-        private void pODANIABindingNavigatorSaveItem_Click(object sender, EventArgs e)
-        {
-            this.Validate();
-            this.pODANIABindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.dataSet1);
+            this.Close();
         }
 
         private void OknoPodaniaGoscia_Load(object sender, EventArgs e)
@@ -41,21 +52,8 @@ namespace PAB_Obsluga_Dzialu_Kadr
             // TODO: Ten wiersz kodu wczytuje dane do tabeli 'dataSet1.STANOWISKA' . Możesz go przenieść lub usunąć.
             this.sTANOWISKATableAdapter.Fill(this.dataSet1.STANOWISKA);
             int IleStanowisk = dataSet1.STANOWISKA.Count();
-
-
-
-            
             // TODO: Ten wiersz kodu wczytuje dane do tabeli 'dataSet1.PODANIA' . Możesz go przenieść lub usunąć.
             this.pODANIATableAdapter.Fill(this.dataSet1.PODANIA);
-
-
-
-            label1.Text = Convert.ToString(dataSet1.PODANIA.Count());
-            pODANIABindingSource.AddNew();
-            dATA_OTRZYMANIADateTimePicker.Value = DateTime.Now;
-            iD_PODANIATextBox.Text = Convert.ToString(dataSet1.PODANIA.Count());
-            sTANTextBox.Text = "0";
-            iD_STANOWISKATextBox.Text = "0";
         }
 
         private void fillByToolStripButton_Click(object sender, EventArgs e)
@@ -71,39 +69,33 @@ namespace PAB_Obsluga_Dzialu_Kadr
 
         }
 
-        private void nAZWA_STANOWISKAComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
-            String wybraneStanowisko = nAZWA_STANOWISKAComboBox.Text;
-            label1.Text = wybraneStanowisko;
-            iD_STANOWISKATextBox.Text = Convert.ToString(nAZWA_STANOWISKAComboBox.SelectedIndex);
+            DateTime czas = DateTime.Now;
+            String czasPoConv = czas.Month + "." + czas.Day + "." + czas.Year;
+            
+            Sq = new SqlCommand("INSERT INTO PODANIA (ID_STANOWISKA, IMIE_PRACOWNIKA, NAZWISKO_PRACOWNIKA, WIEK, RODZAJ_WYKSZTALCENIA, MIEJSCE_ZAMIESZKANIA, DLUGOSC_STAZU, DATA_OTRZYMANIA, STAN, TELEFON) VALUES ('"+ Convert.ToString(indexStanowiska) + "','"+ textBox1.Text +"','"+ textBox2.Text+"','"+ textBox3.Text +"','"+ textBox4.Text+"','"+ textBox5.Text+"','"+ textBox6.Text+"','"+ czasPoConv + "','0','"+ textBox7.Text+ "')", conn);
+            conn.Open();
+            SqlDataReader SDR = Sq.ExecuteReader();
+            conn.Close();
 
-            //TODO naprawic powyzszy wpis. ma miec powiazanie z tablica stanowiska (ID)
+            MessageBox.Show("Podanie wysłano!", "Informacja", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            dZIALBindingSource.MoveFirst();
-            int index = dZIALBindingSource.Find("ID_DZIALU",iD_DZIALULabel3.Text);
-            indexDzialu1 = index;
-            for (int i = 0; i < index; i++)
-                dZIALBindingSource.MoveNext();
-            label3.Text = Convert.ToString(index);
-
-            dZIALBindingSource.ResetBindings(true);
-
-
+            Menu podniesienie = new Menu();
+            podniesienie.Show();
+            this.Close();
         }
 
-        private void nAZWA_DZIALULabel_Click(object sender, EventArgs e)
+        private void nAZWA_STANOWISKAComboBox_SelectionChangeCommitted(object sender, EventArgs e)
         {
+            int indexWybranego = nAZWA_STANOWISKAComboBox.SelectedIndex;
 
-        }
+            sda = new SqlDataAdapter("select NAZWA_DZIALU from DZIAL where ID_DZIALU = '" + Convert.ToString(Stanowiska.Rows[indexWybranego][1]) +"'", conn);
+            DataTable Dzialy = new DataTable();
+            sda.Fill(Dzialy);
 
-        private void nAZWA_DZIALULabel1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void iD_DZIALULabel3_TextChanged(object sender, EventArgs e)
-        {
-    
+            nAZWA_DZIALULabel1.Text = Convert.ToString(Dzialy.Rows[0][0]);
+            indexStanowiska = Convert.ToString(Stanowiska.Rows[indexWybranego][2]);
         }
     }
 }

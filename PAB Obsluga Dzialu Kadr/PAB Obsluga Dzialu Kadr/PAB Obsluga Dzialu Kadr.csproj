@@ -11,7 +11,8 @@
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <PublishUrl>publish\</PublishUrl>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\User\TANQ\Desktop\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
     <UpdateEnabled>false</UpdateEnabled>
@@ -21,10 +22,10 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationRevision>1</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -46,6 +47,18 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>F808F87548AE548463EABD4B4D5A82E1352B192E</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>PAB Obsluga Dzialu Kadr_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -65,6 +78,61 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Dodawanie Pracownika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dodawanie Pracownika.Designer.cs">
+      <DependentUpon>Dodawanie Pracownika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DodawanieDzialu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DodawanieDzialu.Designer.cs">
+      <DependentUpon>DodawanieDzialu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DodawanieOfert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DodawanieOfert.Designer.cs">
+      <DependentUpon>DodawanieOfert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DodawanieStanowiska.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DodawanieStanowiska.Designer.cs">
+      <DependentUpon>DodawanieStanowiska.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EdycjaPracownikow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EdycjaPracownikow.Designer.cs">
+      <DependentUpon>EdycjaPracownikow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EdytowanieDzialow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EdytowanieDzialow.Designer.cs">
+      <DependentUpon>EdytowanieDzialow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EdytowanieOferty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EdytowanieOferty.Designer.cs">
+      <DependentUpon>EdytowanieOferty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EdytowanieStanowiska.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EdytowanieStanowiska.Designer.cs">
+      <DependentUpon>EdytowanieStanowiska.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EdytujPodania.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EdytujPodania.Designer.cs">
+      <DependentUpon>EdytujPodania.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExtenderDlaList.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +159,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PrzeglądanieBDAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrzeglądanieBDAdmin.Designer.cs">
+      <DependentUpon>PrzeglądanieBDAdmin.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Dodawanie Pracownika.resx">
+      <DependentUpon>Dodawanie Pracownika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EdycjaPracownikow.resx">
+      <DependentUpon>EdycjaPracownikow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -112,6 +192,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="PrzeglądanieBDAdmin.resx">
+      <DependentUpon>PrzeglądanieBDAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="DataSet1.xsc">
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </None>
@@ -123,6 +206,7 @@
     <None Include="DataSet1.xss">
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </None>
+    <None Include="PAB Obsluga Dzialu Kadr_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -150,7 +234,7 @@
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
       <Visible>False</Visible>
-      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 i x64%29</ProductName>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
     <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">

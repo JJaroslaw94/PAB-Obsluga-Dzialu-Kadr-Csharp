@@ -117,77 +117,23 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="iMIE_PRACOWNIKALabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="nAZWISKO_PRACOWNIKALabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="wIEKLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="rODZAJ_WYKSZTALCENIALabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="mIEJSCE_ZAMIESZKANIALabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="dLUGOSC_STAZULabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="tELEFONLabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
   <metadata name="nAZWA_DZIALULabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
   </metadata>
-  <metadata name="iD_DZIALULabel.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
-  <metadata name="iD_DZIALULabel2.GenerateMember" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>False</value>
-  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="button1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="button2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAu
-        IwAALiMBeKU/dgAAAAd0SU1FB+MBBRIvG9FhnJEAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJ
-        TVBXgQ4XAAAB1klEQVRoQ+3PbW7EIAyE4dz/cj1SWpCMyOQFbD5ardQfj7TxwjC+7vv+aDhccX1d94je
-        WYHDKCrppVlROPSgMqv0DQ8c9tDDu+mbPThsocdO0bdbcEjokdO0A8FhjYJ/m3aq4dBQ2F/RbgaHhoKW
-        /Dz3QueAdjM4TChkmpZWdAdox+Q1yEO4PEWLttDdhlfX1wAuhWnBEcroePStP/IALoRoOQ/K6Xj0fXzA
-        YTctFUF5A6Wz/cgfcHBIy0RRpkPpbD/yBxzs0jJRlOlUOk+V1yJRlDkhvoAWiaLMBf4FtEgUZW5QFqA/
-        Cy0TRZk7dRegQl6Ud8L2BSjnpK0LUMZp/wsoyjmpu0BCJT0o64ThAgkV9KCs3VwLGCrpQVm7pAU+dYnc
-        O7xAouW8KGvB/AJGC3pR1oTHAp+2ROlsP/IHHHTTgl6U5VA624/8AQdDtJwXZQ2UzvajDOBwmBb0oJyG
-        R9/6Iw/gwhQtOEIZDY++9UcZwqUpWrKH7oNXVx0YujxNyxK6J7Rj8hrUKGSaFlZ0p6LdDA4NBS3T4gmd
-        E9rN4LBGYb9NO9VwSCj4NO1AcNhCj5yib7fgsIce203f7MGhBz28St/wwGEUlfHSrCgcrqCSSu/Mu69v
-        e9KiZaRmUcYAAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAALiMAAC4jAXilP3YAAAAHdElNRQfjAQUSLxvRYZyRAAAAGXRFWHRDb21tZW50AENy
+        ZWF0ZWQgd2l0aCBHSU1QV4EOFwAAAdZJREFUaEPtz21uxCAMhOHc/3I9UlqQjMjkBWw+Wq3UH4+08cIw
+        vu77/mg4XHF9XfeI3lmBwygq6aVZUTj0oDKr9A0PHPbQw7vpmz04bKHHTtG3W3BI6JHTtAPBYY2Cf5t2
+        quHQUNhf0W4Gh4aClvw890LngHYzOEwoZJqWVnQHaMfkNchDuDxFi7bQ3YZX19cALoVpwRHK6Hj0rT/y
+        AC6EaDkPyul49H18wGE3LRVBeQOls/3IH3BwSMtEUaZD6Ww/8gcc7NIyUZTpVDpPldciUZQ5Ib6AFomi
+        zAX+BbRIFGVuUBagPwstE0WZO3UXoEJelHfC9gUo56StC1DGaf8LKMo5qbtAQiU9KOuE4QIJFfSgrN1c
+        Cxgq6UFZu6QFPnWJ3Du8QKLlvChrwfwCRgt6UdaExwKftkTpbD/yBxx004JelOVQOtuP/AEHQ7ScF2UN
+        lM72owzgcJgW9KCchkff+iMP4MIULThCGQ2PvvVHGcKlKVqyh+6DV1cdGLo8TcsSuie0Y/Ia1ChkmhZW
+        dKei3QwODQUt0+IJnRPazeCwRmG/TTvVcEgo+DTtQHDYQo+com+34LCHHttN3+zBoQc9vErf8MBhFJXx
+        0qwoHK6gkkrvzLuvb3vSomWkZlHGAAAAAElFTkSuQmCC
 </value>
   </data>
-  <metadata name="dataSet1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="pODANIABindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>116, 17</value>
-  </metadata>
-  <metadata name="pODANIATableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>300, 17</value>
-  </metadata>
-  <metadata name="tableAdapterManager.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>478, 17</value>
-  </metadata>
-  <metadata name="sTANOWISKATableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 56</value>
-  </metadata>
-  <metadata name="sTANOWISKABindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>850, 17</value>
-  </metadata>
-  <metadata name="fKPODANIARE5STANOWISBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>217, 56</value>
-  </metadata>
-  <metadata name="dZIALBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>493, 56</value>
-  </metadata>
-  <metadata name="dZIALTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>655, 56</value>
-  </metadata>
 </root>

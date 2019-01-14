@@ -36,29 +36,16 @@
             System.Windows.Forms.Label mIEJSCE_ZAMIESZKANIALabel;
             System.Windows.Forms.Label dLUGOSC_STAZULabel;
             System.Windows.Forms.Label tELEFONLabel;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OknoPodaniaGoscia));
             System.Windows.Forms.Label nAZWA_DZIALULabel;
             System.Windows.Forms.Label iD_DZIALULabel;
             System.Windows.Forms.Label iD_DZIALULabel2;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OknoPodaniaGoscia));
             this.button1 = new System.Windows.Forms.Button();
             this.dataSet1 = new PAB_Obsluga_Dzialu_Kadr.DataSet1();
             this.pODANIABindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.pODANIATableAdapter = new PAB_Obsluga_Dzialu_Kadr.DataSet1TableAdapters.PODANIATableAdapter();
             this.tableAdapterManager = new PAB_Obsluga_Dzialu_Kadr.DataSet1TableAdapters.TableAdapterManager();
             this.sTANOWISKATableAdapter = new PAB_Obsluga_Dzialu_Kadr.DataSet1TableAdapters.STANOWISKATableAdapter();
-            this.pODANIABindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
-            this.pODANIABindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.iD_PODANIATextBox = new System.Windows.Forms.TextBox();
-            this.iD_STANOWISKATextBox = new System.Windows.Forms.TextBox();
-            this.iMIE_PRACOWNIKATextBox = new System.Windows.Forms.TextBox();
-            this.nAZWISKO_PRACOWNIKATextBox = new System.Windows.Forms.TextBox();
-            this.wIEKTextBox = new System.Windows.Forms.TextBox();
-            this.rODZAJ_WYKSZTALCENIATextBox = new System.Windows.Forms.TextBox();
-            this.mIEJSCE_ZAMIESZKANIATextBox = new System.Windows.Forms.TextBox();
-            this.dLUGOSC_STAZUTextBox = new System.Windows.Forms.TextBox();
-            this.dATA_OTRZYMANIADateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.sTANTextBox = new System.Windows.Forms.TextBox();
-            this.tELEFONTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.sTANOWISKABindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -69,7 +56,14 @@
             this.nAZWA_DZIALULabel1 = new System.Windows.Forms.Label();
             this.iD_DZIALULabel1 = new System.Windows.Forms.Label();
             this.iD_DZIALULabel3 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
             iMIE_PRACOWNIKALabel = new System.Windows.Forms.Label();
             nAZWISKO_PRACOWNIKALabel = new System.Windows.Forms.Label();
             wIEKLabel = new System.Windows.Forms.Label();
@@ -82,8 +76,6 @@
             iD_DZIALULabel2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pODANIABindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pODANIABindingNavigator)).BeginInit();
-            this.pODANIABindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sTANOWISKABindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKPODANIARE5STANOWISBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dZIALBindingSource)).BeginInit();
@@ -152,6 +144,33 @@
             tELEFONLabel.TabIndex = 22;
             tELEFONLabel.Text = "Telefon:";
             // 
+            // nAZWA_DZIALULabel
+            // 
+            nAZWA_DZIALULabel.AutoSize = true;
+            nAZWA_DZIALULabel.Location = new System.Drawing.Point(323, 38);
+            nAZWA_DZIALULabel.Name = "nAZWA_DZIALULabel";
+            nAZWA_DZIALULabel.Size = new System.Drawing.Size(41, 13);
+            nAZWA_DZIALULabel.TabIndex = 29;
+            nAZWA_DZIALULabel.Text = "Działu:";
+            // 
+            // iD_DZIALULabel
+            // 
+            iD_DZIALULabel.AutoSize = true;
+            iD_DZIALULabel.Location = new System.Drawing.Point(671, 174);
+            iD_DZIALULabel.Name = "iD_DZIALULabel";
+            iD_DZIALULabel.Size = new System.Drawing.Size(63, 13);
+            iD_DZIALULabel.TabIndex = 30;
+            iD_DZIALULabel.Text = "ID DZIALU:";
+            // 
+            // iD_DZIALULabel2
+            // 
+            iD_DZIALULabel2.AutoSize = true;
+            iD_DZIALULabel2.Location = new System.Drawing.Point(671, 127);
+            iD_DZIALULabel2.Name = "iD_DZIALULabel2";
+            iD_DZIALULabel2.Size = new System.Drawing.Size(63, 13);
+            iD_DZIALULabel2.TabIndex = 31;
+            iD_DZIALULabel2.Text = "ID DZIALU:";
+            // 
             // button1
             // 
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
@@ -191,122 +210,6 @@
             // 
             this.sTANOWISKATableAdapter.ClearBeforeFill = true;
             // 
-            // pODANIABindingNavigator
-            // 
-            this.pODANIABindingNavigator.AddNewItem = null;
-            this.pODANIABindingNavigator.BindingSource = this.pODANIABindingSource;
-            this.pODANIABindingNavigator.CountItem = null;
-            this.pODANIABindingNavigator.DeleteItem = null;
-            this.pODANIABindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.pODANIABindingNavigatorSaveItem});
-            this.pODANIABindingNavigator.Location = new System.Drawing.Point(0, 0);
-            this.pODANIABindingNavigator.MoveFirstItem = null;
-            this.pODANIABindingNavigator.MoveLastItem = null;
-            this.pODANIABindingNavigator.MoveNextItem = null;
-            this.pODANIABindingNavigator.MovePreviousItem = null;
-            this.pODANIABindingNavigator.Name = "pODANIABindingNavigator";
-            this.pODANIABindingNavigator.PositionItem = null;
-            this.pODANIABindingNavigator.Size = new System.Drawing.Size(483, 25);
-            this.pODANIABindingNavigator.TabIndex = 1;
-            this.pODANIABindingNavigator.Text = "bindingNavigator1";
-            // 
-            // pODANIABindingNavigatorSaveItem
-            // 
-            this.pODANIABindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.pODANIABindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("pODANIABindingNavigatorSaveItem.Image")));
-            this.pODANIABindingNavigatorSaveItem.Name = "pODANIABindingNavigatorSaveItem";
-            this.pODANIABindingNavigatorSaveItem.Size = new System.Drawing.Size(23, 22);
-            this.pODANIABindingNavigatorSaveItem.Text = "Zapisz dane";
-            this.pODANIABindingNavigatorSaveItem.Click += new System.EventHandler(this.pODANIABindingNavigatorSaveItem_Click);
-            // 
-            // iD_PODANIATextBox
-            // 
-            this.iD_PODANIATextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pODANIABindingSource, "ID_PODANIA", true));
-            this.iD_PODANIATextBox.Location = new System.Drawing.Point(117, 422);
-            this.iD_PODANIATextBox.Name = "iD_PODANIATextBox";
-            this.iD_PODANIATextBox.Size = new System.Drawing.Size(0, 20);
-            this.iD_PODANIATextBox.TabIndex = 3;
-            // 
-            // iD_STANOWISKATextBox
-            // 
-            this.iD_STANOWISKATextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pODANIABindingSource, "ID_STANOWISKA", true));
-            this.iD_STANOWISKATextBox.Location = new System.Drawing.Point(117, 396);
-            this.iD_STANOWISKATextBox.Name = "iD_STANOWISKATextBox";
-            this.iD_STANOWISKATextBox.Size = new System.Drawing.Size(0, 20);
-            this.iD_STANOWISKATextBox.TabIndex = 5;
-            // 
-            // iMIE_PRACOWNIKATextBox
-            // 
-            this.iMIE_PRACOWNIKATextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pODANIABindingSource, "IMIE_PRACOWNIKA", true));
-            this.iMIE_PRACOWNIKATextBox.Location = new System.Drawing.Point(186, 63);
-            this.iMIE_PRACOWNIKATextBox.Name = "iMIE_PRACOWNIKATextBox";
-            this.iMIE_PRACOWNIKATextBox.Size = new System.Drawing.Size(200, 20);
-            this.iMIE_PRACOWNIKATextBox.TabIndex = 7;
-            // 
-            // nAZWISKO_PRACOWNIKATextBox
-            // 
-            this.nAZWISKO_PRACOWNIKATextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pODANIABindingSource, "NAZWISKO_PRACOWNIKA", true));
-            this.nAZWISKO_PRACOWNIKATextBox.Location = new System.Drawing.Point(186, 89);
-            this.nAZWISKO_PRACOWNIKATextBox.Name = "nAZWISKO_PRACOWNIKATextBox";
-            this.nAZWISKO_PRACOWNIKATextBox.Size = new System.Drawing.Size(200, 20);
-            this.nAZWISKO_PRACOWNIKATextBox.TabIndex = 9;
-            // 
-            // wIEKTextBox
-            // 
-            this.wIEKTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pODANIABindingSource, "WIEK", true));
-            this.wIEKTextBox.Location = new System.Drawing.Point(186, 115);
-            this.wIEKTextBox.Name = "wIEKTextBox";
-            this.wIEKTextBox.Size = new System.Drawing.Size(200, 20);
-            this.wIEKTextBox.TabIndex = 11;
-            // 
-            // rODZAJ_WYKSZTALCENIATextBox
-            // 
-            this.rODZAJ_WYKSZTALCENIATextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pODANIABindingSource, "RODZAJ_WYKSZTALCENIA", true));
-            this.rODZAJ_WYKSZTALCENIATextBox.Location = new System.Drawing.Point(186, 141);
-            this.rODZAJ_WYKSZTALCENIATextBox.Name = "rODZAJ_WYKSZTALCENIATextBox";
-            this.rODZAJ_WYKSZTALCENIATextBox.Size = new System.Drawing.Size(200, 20);
-            this.rODZAJ_WYKSZTALCENIATextBox.TabIndex = 13;
-            // 
-            // mIEJSCE_ZAMIESZKANIATextBox
-            // 
-            this.mIEJSCE_ZAMIESZKANIATextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pODANIABindingSource, "MIEJSCE_ZAMIESZKANIA", true));
-            this.mIEJSCE_ZAMIESZKANIATextBox.Location = new System.Drawing.Point(186, 167);
-            this.mIEJSCE_ZAMIESZKANIATextBox.Name = "mIEJSCE_ZAMIESZKANIATextBox";
-            this.mIEJSCE_ZAMIESZKANIATextBox.Size = new System.Drawing.Size(200, 20);
-            this.mIEJSCE_ZAMIESZKANIATextBox.TabIndex = 15;
-            // 
-            // dLUGOSC_STAZUTextBox
-            // 
-            this.dLUGOSC_STAZUTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pODANIABindingSource, "DLUGOSC_STAZU", true));
-            this.dLUGOSC_STAZUTextBox.Location = new System.Drawing.Point(186, 193);
-            this.dLUGOSC_STAZUTextBox.Name = "dLUGOSC_STAZUTextBox";
-            this.dLUGOSC_STAZUTextBox.Size = new System.Drawing.Size(200, 20);
-            this.dLUGOSC_STAZUTextBox.TabIndex = 17;
-            // 
-            // dATA_OTRZYMANIADateTimePicker
-            // 
-            this.dATA_OTRZYMANIADateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.pODANIABindingSource, "DATA_OTRZYMANIA", true));
-            this.dATA_OTRZYMANIADateTimePicker.Location = new System.Drawing.Point(117, 370);
-            this.dATA_OTRZYMANIADateTimePicker.Name = "dATA_OTRZYMANIADateTimePicker";
-            this.dATA_OTRZYMANIADateTimePicker.Size = new System.Drawing.Size(0, 20);
-            this.dATA_OTRZYMANIADateTimePicker.TabIndex = 19;
-            // 
-            // sTANTextBox
-            // 
-            this.sTANTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pODANIABindingSource, "STAN", true));
-            this.sTANTextBox.Location = new System.Drawing.Point(117, 344);
-            this.sTANTextBox.Name = "sTANTextBox";
-            this.sTANTextBox.Size = new System.Drawing.Size(0, 20);
-            this.sTANTextBox.TabIndex = 21;
-            // 
-            // tELEFONTextBox
-            // 
-            this.tELEFONTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.pODANIABindingSource, "TELEFON", true));
-            this.tELEFONTextBox.Location = new System.Drawing.Point(186, 219);
-            this.tELEFONTextBox.Name = "tELEFONTextBox";
-            this.tELEFONTextBox.Size = new System.Drawing.Size(200, 20);
-            this.tELEFONTextBox.TabIndex = 23;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -333,15 +236,12 @@
             // nAZWA_STANOWISKAComboBox
             // 
             this.nAZWA_STANOWISKAComboBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.sTANOWISKABindingSource, "NAZWA_STANOWISKA", true));
-            this.nAZWA_STANOWISKAComboBox.DataSource = this.sTANOWISKABindingSource;
-            this.nAZWA_STANOWISKAComboBox.DisplayMember = "NAZWA_STANOWISKA";
             this.nAZWA_STANOWISKAComboBox.FormattingEnabled = true;
             this.nAZWA_STANOWISKAComboBox.Location = new System.Drawing.Point(186, 36);
             this.nAZWA_STANOWISKAComboBox.Name = "nAZWA_STANOWISKAComboBox";
             this.nAZWA_STANOWISKAComboBox.Size = new System.Drawing.Size(131, 21);
             this.nAZWA_STANOWISKAComboBox.TabIndex = 27;
-            this.nAZWA_STANOWISKAComboBox.ValueMember = "ID_DZIALU";
-            this.nAZWA_STANOWISKAComboBox.SelectedIndexChanged += new System.EventHandler(this.nAZWA_STANOWISKAComboBox_SelectedIndexChanged);
+            this.nAZWA_STANOWISKAComboBox.SelectionChangeCommitted += new System.EventHandler(this.nAZWA_STANOWISKAComboBox_SelectionChangeCommitted);
             // 
             // fKPODANIARE5STANOWISBindingSource
             // 
@@ -357,16 +257,6 @@
             // 
             this.dZIALTableAdapter.ClearBeforeFill = true;
             // 
-            // nAZWA_DZIALULabel
-            // 
-            nAZWA_DZIALULabel.AutoSize = true;
-            nAZWA_DZIALULabel.Location = new System.Drawing.Point(323, 38);
-            nAZWA_DZIALULabel.Name = "nAZWA_DZIALULabel";
-            nAZWA_DZIALULabel.Size = new System.Drawing.Size(41, 13);
-            nAZWA_DZIALULabel.TabIndex = 29;
-            nAZWA_DZIALULabel.Text = "Działu:";
-            nAZWA_DZIALULabel.Click += new System.EventHandler(this.nAZWA_DZIALULabel_Click);
-            // 
             // nAZWA_DZIALULabel1
             // 
             this.nAZWA_DZIALULabel1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.dZIALBindingSource, "NAZWA_DZIALU", true));
@@ -375,16 +265,6 @@
             this.nAZWA_DZIALULabel1.Size = new System.Drawing.Size(100, 23);
             this.nAZWA_DZIALULabel1.TabIndex = 30;
             this.nAZWA_DZIALULabel1.Text = "label4";
-            this.nAZWA_DZIALULabel1.Click += new System.EventHandler(this.nAZWA_DZIALULabel1_Click);
-            // 
-            // iD_DZIALULabel
-            // 
-            iD_DZIALULabel.AutoSize = true;
-            iD_DZIALULabel.Location = new System.Drawing.Point(671, 174);
-            iD_DZIALULabel.Name = "iD_DZIALULabel";
-            iD_DZIALULabel.Size = new System.Drawing.Size(63, 13);
-            iD_DZIALULabel.TabIndex = 30;
-            iD_DZIALULabel.Text = "ID DZIALU:";
             // 
             // iD_DZIALULabel1
             // 
@@ -395,15 +275,6 @@
             this.iD_DZIALULabel1.TabIndex = 31;
             this.iD_DZIALULabel1.Text = "label3";
             // 
-            // iD_DZIALULabel2
-            // 
-            iD_DZIALULabel2.AutoSize = true;
-            iD_DZIALULabel2.Location = new System.Drawing.Point(671, 127);
-            iD_DZIALULabel2.Name = "iD_DZIALULabel2";
-            iD_DZIALULabel2.Size = new System.Drawing.Size(63, 13);
-            iD_DZIALULabel2.TabIndex = 31;
-            iD_DZIALULabel2.Text = "ID DZIALU:";
-            // 
             // iD_DZIALULabel3
             // 
             this.iD_DZIALULabel3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.sTANOWISKABindingSource, "ID_DZIALU", true));
@@ -412,23 +283,79 @@
             this.iD_DZIALULabel3.Size = new System.Drawing.Size(100, 23);
             this.iD_DZIALULabel3.TabIndex = 32;
             this.iD_DZIALULabel3.Text = "label3";
-            this.iD_DZIALULabel3.TextChanged += new System.EventHandler(this.iD_DZIALULabel3_TextChanged);
             // 
-            // label3
+            // button2
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(482, 273);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 33;
-            this.label3.Text = "label3";
+            this.button2.Location = new System.Drawing.Point(373, 268);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(96, 31);
+            this.button2.TabIndex = 34;
+            this.button2.Text = "Wyślij";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(186, 63);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(238, 20);
+            this.textBox1.TabIndex = 35;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(186, 89);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(238, 20);
+            this.textBox2.TabIndex = 36;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(186, 115);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(238, 20);
+            this.textBox3.TabIndex = 37;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(186, 141);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(238, 20);
+            this.textBox4.TabIndex = 38;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(186, 167);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(238, 20);
+            this.textBox5.TabIndex = 39;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(186, 193);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(238, 20);
+            this.textBox6.TabIndex = 40;
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(186, 219);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(238, 20);
+            this.textBox7.TabIndex = 41;
             // 
             // OknoPodaniaGoscia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(483, 306);
-            this.Controls.Add(this.label3);
+            this.ClientSize = new System.Drawing.Size(494, 314);
+            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.button2);
             this.Controls.Add(iD_DZIALULabel2);
             this.Controls.Add(this.iD_DZIALULabel3);
             this.Controls.Add(iD_DZIALULabel);
@@ -438,25 +365,13 @@
             this.Controls.Add(this.nAZWA_STANOWISKAComboBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.iD_PODANIATextBox);
-            this.Controls.Add(this.iD_STANOWISKATextBox);
             this.Controls.Add(iMIE_PRACOWNIKALabel);
-            this.Controls.Add(this.iMIE_PRACOWNIKATextBox);
             this.Controls.Add(nAZWISKO_PRACOWNIKALabel);
-            this.Controls.Add(this.nAZWISKO_PRACOWNIKATextBox);
             this.Controls.Add(wIEKLabel);
-            this.Controls.Add(this.wIEKTextBox);
             this.Controls.Add(rODZAJ_WYKSZTALCENIALabel);
-            this.Controls.Add(this.rODZAJ_WYKSZTALCENIATextBox);
             this.Controls.Add(mIEJSCE_ZAMIESZKANIALabel);
-            this.Controls.Add(this.mIEJSCE_ZAMIESZKANIATextBox);
             this.Controls.Add(dLUGOSC_STAZULabel);
-            this.Controls.Add(this.dLUGOSC_STAZUTextBox);
-            this.Controls.Add(this.dATA_OTRZYMANIADateTimePicker);
-            this.Controls.Add(this.sTANTextBox);
             this.Controls.Add(tELEFONLabel);
-            this.Controls.Add(this.tELEFONTextBox);
-            this.Controls.Add(this.pODANIABindingNavigator);
             this.Controls.Add(this.button1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Name = "OknoPodaniaGoscia";
@@ -464,9 +379,6 @@
             this.Load += new System.EventHandler(this.OknoPodaniaGoscia_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pODANIABindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pODANIABindingNavigator)).EndInit();
-            this.pODANIABindingNavigator.ResumeLayout(false);
-            this.pODANIABindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sTANOWISKABindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fKPODANIARE5STANOWISBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dZIALBindingSource)).EndInit();
@@ -482,19 +394,6 @@
         private System.Windows.Forms.BindingSource pODANIABindingSource;
         private DataSet1TableAdapters.PODANIATableAdapter pODANIATableAdapter;
         private DataSet1TableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.BindingNavigator pODANIABindingNavigator;
-        private System.Windows.Forms.ToolStripButton pODANIABindingNavigatorSaveItem;
-        private System.Windows.Forms.TextBox iD_PODANIATextBox;
-        private System.Windows.Forms.TextBox iD_STANOWISKATextBox;
-        private System.Windows.Forms.TextBox iMIE_PRACOWNIKATextBox;
-        private System.Windows.Forms.TextBox nAZWISKO_PRACOWNIKATextBox;
-        private System.Windows.Forms.TextBox wIEKTextBox;
-        private System.Windows.Forms.TextBox rODZAJ_WYKSZTALCENIATextBox;
-        private System.Windows.Forms.TextBox mIEJSCE_ZAMIESZKANIATextBox;
-        private System.Windows.Forms.TextBox dLUGOSC_STAZUTextBox;
-        private System.Windows.Forms.DateTimePicker dATA_OTRZYMANIADateTimePicker;
-        private System.Windows.Forms.TextBox sTANTextBox;
-        private System.Windows.Forms.TextBox tELEFONTextBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private DataSet1TableAdapters.STANOWISKATableAdapter sTANOWISKATableAdapter;
@@ -506,6 +405,13 @@
         private System.Windows.Forms.Label nAZWA_DZIALULabel1;
         private System.Windows.Forms.Label iD_DZIALULabel1;
         private System.Windows.Forms.Label iD_DZIALULabel3;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox textBox7;
     }
 }
