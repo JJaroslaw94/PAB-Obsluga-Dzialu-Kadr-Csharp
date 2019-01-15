@@ -17,8 +17,7 @@ namespace PAB_Obsluga_Dzialu_Kadr
         String indexStanowiska = "0";
         String stanowisko;
         SqlDataAdapter sda;
-        SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\workspace\PAB-Obsluga-Dzialu-Kadr-Csharp\PAB Obsluga Dzialu Kadr\PAB Obsluga Dzialu Kadr\BazaDanych.mdf;Integrated Security=True");
-        SqlCommand Sq;
+        SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;Integrated Security=True;AttachDbFilename=|DataDirectory|\BazaDanych.mdf"); SqlCommand Sq;
         DataTable Stanowiska;
 
         public OknoPodaniaGoscia(String Stanowisko)

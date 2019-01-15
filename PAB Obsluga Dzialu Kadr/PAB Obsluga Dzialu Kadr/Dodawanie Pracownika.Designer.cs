@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dodawanie_Pracownika));
             System.Windows.Forms.Label nAZWA_DZIALULabel;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dodawanie_Pracownika));
             this.label6 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.button2 = new System.Windows.Forms.Button();
@@ -47,6 +47,15 @@
             this.label1 = new System.Windows.Forms.Label();
             nAZWA_DZIALULabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // nAZWA_DZIALULabel
+            // 
+            nAZWA_DZIALULabel.AutoSize = true;
+            nAZWA_DZIALULabel.Location = new System.Drawing.Point(274, 34);
+            nAZWA_DZIALULabel.Name = "nAZWA_DZIALULabel";
+            nAZWA_DZIALULabel.Size = new System.Drawing.Size(41, 13);
+            nAZWA_DZIALULabel.TabIndex = 48;
+            nAZWA_DZIALULabel.Text = "Działu:";
             // 
             // label6
             // 
@@ -76,15 +85,6 @@
             this.button2.TabIndex = 50;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // nAZWA_DZIALULabel
-            // 
-            nAZWA_DZIALULabel.AutoSize = true;
-            nAZWA_DZIALULabel.Location = new System.Drawing.Point(274, 34);
-            nAZWA_DZIALULabel.Name = "nAZWA_DZIALULabel";
-            nAZWA_DZIALULabel.Size = new System.Drawing.Size(41, 13);
-            nAZWA_DZIALULabel.TabIndex = 48;
-            nAZWA_DZIALULabel.Text = "Działu:";
             // 
             // nAZWA_DZIALULabel1
             // 

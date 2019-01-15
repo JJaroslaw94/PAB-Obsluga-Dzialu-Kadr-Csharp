@@ -49,6 +49,15 @@
             nAZWA_DZIALULabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
+            // nAZWA_DZIALULabel
+            // 
+            nAZWA_DZIALULabel.AutoSize = true;
+            nAZWA_DZIALULabel.Location = new System.Drawing.Point(267, 31);
+            nAZWA_DZIALULabel.Name = "nAZWA_DZIALULabel";
+            nAZWA_DZIALULabel.Size = new System.Drawing.Size(41, 13);
+            nAZWA_DZIALULabel.TabIndex = 31;
+            nAZWA_DZIALULabel.Text = "Działu:";
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -141,15 +150,6 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // nAZWA_DZIALULabel
-            // 
-            nAZWA_DZIALULabel.AutoSize = true;
-            nAZWA_DZIALULabel.Location = new System.Drawing.Point(267, 31);
-            nAZWA_DZIALULabel.Name = "nAZWA_DZIALULabel";
-            nAZWA_DZIALULabel.Size = new System.Drawing.Size(41, 13);
-            nAZWA_DZIALULabel.TabIndex = 31;
-            nAZWA_DZIALULabel.Text = "Działu:";
-            // 
             // nAZWA_DZIALULabel1
             // 
             this.nAZWA_DZIALULabel1.Location = new System.Drawing.Point(314, 31);
@@ -221,6 +221,7 @@
             this.Controls.Add(this.label1);
             this.Name = "EdycjaPracownikow";
             this.Text = "EdycjaPracownikow";
+            this.Load += new System.EventHandler(this.EdycjaPracownikow_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -22,7 +22,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationRevision>7</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -168,8 +168,29 @@
     <EmbeddedResource Include="Dodawanie Pracownika.resx">
       <DependentUpon>Dodawanie Pracownika.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DodawanieDzialu.resx">
+      <DependentUpon>DodawanieDzialu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DodawanieOfert.resx">
+      <DependentUpon>DodawanieOfert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DodawanieStanowiska.resx">
+      <DependentUpon>DodawanieStanowiska.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EdycjaPracownikow.resx">
       <DependentUpon>EdycjaPracownikow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EdytowanieDzialow.resx">
+      <DependentUpon>EdytowanieDzialow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EdytowanieOferty.resx">
+      <DependentUpon>EdytowanieOferty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EdytowanieStanowiska.resx">
+      <DependentUpon>EdytowanieStanowiska.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EdytujPodania.resx">
+      <DependentUpon>EdytujPodania.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -224,10 +245,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="BazaDanych.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="BazaDanych_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <DependentUpon>BazaDanych.mdf</DependentUpon>
     </Content>
   </ItemGroup>

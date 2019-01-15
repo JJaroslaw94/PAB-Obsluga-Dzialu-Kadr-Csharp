@@ -25,8 +25,7 @@ namespace PAB_Obsluga_Dzialu_Kadr
         {
             SqlDataAdapter sda;
             DataTable dtt;
-            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\workspace\PAB-Obsluga-Dzialu-Kadr-Csharp\PAB Obsluga Dzialu Kadr\PAB Obsluga Dzialu Kadr\BazaDanych.mdf;Integrated Security=True");
-            sda = new SqlDataAdapter("select count(*) from STANOWISKA INNER JOIN PRACOWNICY ON STANOWISKA.ID_STANOWISKA = PRACOWNICY.ID_STANOWISKA where PRACOWNICY.E_MAIL_PRACOWNIKA ='" + textBox1.Text + "' and PRACOWNICY.HASLO_PRACOWNIKA='" + textBox2.Text + "' and STANOWISKA.UPRAWNIENIA='Administrator'", conn);
+            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;Integrated Security=True;AttachDbFilename=|DataDirectory|\BazaDanych.mdf"); sda = new SqlDataAdapter("select count(*) from STANOWISKA INNER JOIN PRACOWNICY ON STANOWISKA.ID_STANOWISKA = PRACOWNICY.ID_STANOWISKA where PRACOWNICY.E_MAIL_PRACOWNIKA ='" + textBox1.Text + "' and PRACOWNICY.HASLO_PRACOWNIKA='" + textBox2.Text + "' and STANOWISKA.UPRAWNIENIA='Administrator'", conn);
             dtt = new DataTable();
             sda.Fill(dtt);
             if (dtt.Rows[0][0].ToString() == "1")

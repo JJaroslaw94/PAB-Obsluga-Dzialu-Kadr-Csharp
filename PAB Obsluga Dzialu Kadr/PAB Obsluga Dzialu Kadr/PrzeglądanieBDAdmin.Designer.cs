@@ -44,8 +44,8 @@
             this.button8 = new System.Windows.Forms.Button();
             this.listView2 = new System.Windows.Forms.ListView();
             this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader12 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -81,8 +81,8 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.listView5 = new System.Windows.Forms.ListView();
             this.button10 = new System.Windows.Forms.Button();
+            this.listView5 = new System.Windows.Forms.ListView();
             this.columnHeader33 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader34 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader35 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -193,8 +193,8 @@
             // 
             this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader7,
-            this.columnHeader8,
             this.columnHeader12,
+            this.columnHeader8,
             this.columnHeader9,
             this.columnHeader10,
             this.columnHeader11});
@@ -209,15 +209,15 @@
             // 
             this.columnHeader7.Text = "Lp.";
             // 
-            // columnHeader8
-            // 
-            this.columnHeader8.Text = "Nazwa Stanowiska";
-            this.columnHeader8.Width = 139;
-            // 
             // columnHeader12
             // 
             this.columnHeader12.Text = "Nazwa Dzialu";
             this.columnHeader12.Width = 148;
+            // 
+            // columnHeader8
+            // 
+            this.columnHeader8.Text = "Nazwa Stanowiska";
+            this.columnHeader8.Width = 139;
             // 
             // columnHeader9
             // 
@@ -468,6 +468,16 @@
             this.panel5.Size = new System.Drawing.Size(742, 304);
             this.panel5.TabIndex = 11;
             // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(611, 278);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(128, 23);
+            this.button10.TabIndex = 1;
+            this.button10.Text = "Dodaj nowy";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
             // listView5
             // 
             this.listView5.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
@@ -480,16 +490,6 @@
             this.listView5.TabIndex = 0;
             this.listView5.UseCompatibleStateImageBehavior = false;
             this.listView5.View = System.Windows.Forms.View.Details;
-            // 
-            // button10
-            // 
-            this.button10.Location = new System.Drawing.Point(611, 278);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(128, 23);
-            this.button10.TabIndex = 1;
-            this.button10.Text = "Dodaj nowy";
-            this.button10.UseVisualStyleBackColor = true;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // columnHeader33
             // 
@@ -523,6 +523,7 @@
             this.Controls.Add(this.panel3);
             this.Name = "PrzeglądanieBDAdmin";
             this.Text = "PrzeglądanieBDAdmin";
+            this.Load += new System.EventHandler(this.PrzeglądanieBDAdmin_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);

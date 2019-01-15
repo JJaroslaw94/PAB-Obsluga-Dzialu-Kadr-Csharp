@@ -123,9 +123,9 @@ go
 /* Table: DZIAL                                                 */
 /*==============================================================*/
 create table DZIAL (
-   ID_DZIALU            int                  not null,
+   ID_DZIALU            int                  not null IDENTITY, 
    NAZWA_DZIALU         text                 null,
-   constraint PK_DZIAL primary key nonclustered (ID_DZIALU)
+   constraint PK_DZIAL primary key nonclustered (ID_DZIALU ASC)
 )
 go
 
@@ -133,14 +133,14 @@ go
 /* Table: OFERTY                                                */
 /*==============================================================*/
 create table OFERTY (
-   ID__OFERTY           int                  not null,
+   ID__OFERTY           int                  not null IDENTITY,
    ID_STANOWISKA        int                  not null,
    NAZWA_STANOWISKA     text                 null,
    OPIS                 text                 null,
    WYMOGI               text                 null,
    WYNAGRODZENIE        float                null,
    DOSTEPNE_MIEJSCA     int                  null,
-   constraint PK_OFERTY primary key nonclustered (ID__OFERTY)
+   constraint PK_OFERTY primary key nonclustered (ID__OFERTY ASC)
 )
 go
 
@@ -156,7 +156,7 @@ go
 /* Table: PODANIA                                               */
 /*==============================================================*/
 create table PODANIA (
-   ID_PODANIA           int                  not null,
+   ID_PODANIA           int                  not null IDENTITY,
    ID_STANOWISKA        int                  not null,
    IMIE_PRACOWNIKA      text                 null,
    NAZWISKO_PRACOWNIKA  text                 null,
@@ -167,7 +167,7 @@ create table PODANIA (
    DATA_OTRZYMANIA      datetime             null,
    STAN                 int                  null,
    TELEFON              text                 null,
-   constraint PK_PODANIA primary key nonclustered (ID_PODANIA)
+   constraint PK_PODANIA primary key nonclustered (ID_PODANIA ASC)
 )
 go
 
@@ -183,14 +183,14 @@ go
 /* Table: PRACOWNICY                                            */
 /*==============================================================*/
 create table PRACOWNICY (
-   ID_PRACOWNIKA        int                  not null,
+   ID_PRACOWNIKA        int                  not null IDENTITY,
    ID_STANOWISKA        int                  not null,
    ID_DZIALU            int                  not null,
    IMIE_PRACOWNIKA      text                 null,
    NAZWISKO_PRACOWNIKA  text                 null,
    E_MAIL_PRACOWNIKA    text                 null,
    HASLO_PRACOWNIKA     text                 null,
-   constraint PK_PRACOWNICY primary key nonclustered (ID_PRACOWNIKA)
+   constraint PK_PRACOWNICY primary key nonclustered (ID_PRACOWNIKA ASC)
 )
 go
 
@@ -214,12 +214,12 @@ go
 /* Table: STANOWISKA                                            */
 /*==============================================================*/
 create table STANOWISKA (
-   ID_STANOWISKA        int                  not null,
+   ID_STANOWISKA        int                  not null IDENTITY,
    ID_DZIALU            int                  not null,
    NAZWA_STANOWISKA     text                 null,
    MIEJSCA              int                  null,
    UPRAWNIENIA          text                 null,
-   constraint PK_STANOWISKA primary key nonclustered (ID_STANOWISKA)
+   constraint PK_STANOWISKA primary key nonclustered (ID_STANOWISKA ASC)
 )
 go
 

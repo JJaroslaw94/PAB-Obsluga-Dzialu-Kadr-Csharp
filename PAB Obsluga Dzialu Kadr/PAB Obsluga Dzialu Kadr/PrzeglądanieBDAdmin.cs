@@ -13,10 +13,14 @@ namespace PAB_Obsluga_Dzialu_Kadr
 {
     public partial class PrzeglądanieBDAdmin : Form
     {
+        //Lista nalożonych na siebie paneli
+        //działa jak CardLayout
         List<Panel> ListaPaneli = new List<Panel>();
+
         public PrzeglądanieBDAdmin(int Okno)
         {
             InitializeComponent();
+
             ListaPaneli.Add(panel1);
             ListaPaneli.Add(panel2);
             ListaPaneli.Add(panel3);
@@ -32,9 +36,7 @@ namespace PAB_Obsluga_Dzialu_Kadr
             ListaPaneli[Okno].Show();
 
             SqlDataAdapter sda;
-            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=D:\workspace\PAB-Obsluga-Dzialu-Kadr-Csharp\PAB Obsluga Dzialu Kadr\PAB Obsluga Dzialu Kadr\BazaDanych.mdf;Integrated Security=True");
-            SqlCommand Sq;
-
+            SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;Integrated Security=True;AttachDbFilename=|DataDirectory|\BazaDanych.mdf");
             //CZ1 Pracownicy
 
             listView1.FullRowSelect = true;
@@ -411,6 +413,11 @@ namespace PAB_Obsluga_Dzialu_Kadr
             DodawanieDzialu DD = new DodawanieDzialu();
             DD.Show();
             this.Close();
+        }
+
+        private void PrzeglądanieBDAdmin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
