@@ -113,7 +113,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "OknoAdministratora1";
-            this.Text = "OknoAdministratora1";
+            this.Text = "Okno Administratora";
             this.ResumeLayout(false);
             this.PerformLayout();
 
