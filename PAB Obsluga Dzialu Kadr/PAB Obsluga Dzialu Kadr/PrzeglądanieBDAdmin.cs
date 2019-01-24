@@ -391,7 +391,7 @@ namespace PAB_Obsluga_Dzialu_Kadr
         {
             Menu F1 = new Menu();
             F1.Show();
-            this.Close();
+            this.Close();            
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -418,6 +418,11 @@ namespace PAB_Obsluga_Dzialu_Kadr
         private void PrzeglądanieBDAdmin_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void PrzeglądanieBDAdmin_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

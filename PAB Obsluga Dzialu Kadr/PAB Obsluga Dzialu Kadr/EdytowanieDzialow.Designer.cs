@@ -95,6 +95,7 @@
             this.Controls.Add(this.button1);
             this.Name = "EdytowanieDzialow";
             this.Text = "EdytowanieDzialow";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.EdytowanieDzialow_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

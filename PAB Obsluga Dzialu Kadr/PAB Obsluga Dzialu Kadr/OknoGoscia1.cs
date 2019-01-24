@@ -97,5 +97,10 @@ namespace PAB_Obsluga_Dzialu_Kadr
             OPG.Show();
             this.Dispose();           
         }
+
+        private void OknoGoscia1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

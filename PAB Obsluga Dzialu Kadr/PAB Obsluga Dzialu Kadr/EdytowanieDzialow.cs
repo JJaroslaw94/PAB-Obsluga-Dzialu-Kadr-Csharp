@@ -97,5 +97,10 @@ namespace PAB_Obsluga_Dzialu_Kadr
             }
 
         }
+
+        private void EdytowanieDzialow_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

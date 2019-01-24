@@ -145,6 +145,7 @@
             this.Controls.Add(this.button1);
             this.Name = "DodawanieStanowiska";
             this.Text = "DodawanieStanowiska";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.DodawanieStanowiska_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

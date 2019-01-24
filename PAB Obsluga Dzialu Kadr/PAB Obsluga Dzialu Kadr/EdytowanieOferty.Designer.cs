@@ -221,6 +221,7 @@
             this.Controls.Add(this.label1);
             this.Name = "EdytowanieOferty";
             this.Text = "EdytowanieOferty";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.EdytowanieOferty_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

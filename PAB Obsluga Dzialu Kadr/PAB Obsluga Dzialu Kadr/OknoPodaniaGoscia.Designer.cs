@@ -376,6 +376,7 @@
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Name = "OknoPodaniaGoscia";
             this.Text = "Formularz Podania";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.OknoPodaniaGoscia_FormClosing);
             this.Load += new System.EventHandler(this.OknoPodaniaGoscia_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pODANIABindingSource)).EndInit();

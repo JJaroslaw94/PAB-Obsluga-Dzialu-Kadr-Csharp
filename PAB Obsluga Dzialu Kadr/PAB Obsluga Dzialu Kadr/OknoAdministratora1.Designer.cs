@@ -114,6 +114,7 @@
             this.Controls.Add(this.button1);
             this.Name = "OknoAdministratora1";
             this.Text = "Okno Administratora";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.OknoAdministratora1_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

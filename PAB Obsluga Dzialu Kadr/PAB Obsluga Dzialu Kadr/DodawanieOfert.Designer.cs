@@ -209,6 +209,7 @@
             this.Controls.Add(this.label1);
             this.Name = "DodawanieOfert";
             this.Text = "DodawanieOfert";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.DodawanieOfert_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

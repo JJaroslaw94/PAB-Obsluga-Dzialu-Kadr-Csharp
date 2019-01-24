@@ -91,5 +91,10 @@ namespace PAB_Obsluga_Dzialu_Kadr
             this.Close();
         }
 
+        private void Dodawanie_Pracownika_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+
+        }
     }
 }

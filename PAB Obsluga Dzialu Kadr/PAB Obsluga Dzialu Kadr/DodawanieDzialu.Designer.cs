@@ -83,6 +83,7 @@
             this.Controls.Add(this.button1);
             this.Name = "DodawanieDzialu";
             this.Text = "DodawanieDzialu";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.DodawanieDzialu_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

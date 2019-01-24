@@ -96,5 +96,10 @@ namespace PAB_Obsluga_Dzialu_Kadr
             nAZWA_DZIALULabel1.Text = Convert.ToString(Dzialy.Rows[0][0]);
             indexStanowiska = Convert.ToString(Stanowiska.Rows[indexWybranego][2]);
         }
+
+        private void OknoPodaniaGoscia_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

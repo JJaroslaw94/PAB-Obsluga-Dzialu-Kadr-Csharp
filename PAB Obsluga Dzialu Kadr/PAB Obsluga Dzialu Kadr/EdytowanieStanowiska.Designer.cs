@@ -157,6 +157,7 @@
             this.Controls.Add(this.button1);
             this.Name = "EdytowanieStanowiska";
             this.Text = "EdytowanieStanowiska";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.EdytowanieStanowiska_FormClosing);
             this.Load += new System.EventHandler(this.EdytowanieStanowiska_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

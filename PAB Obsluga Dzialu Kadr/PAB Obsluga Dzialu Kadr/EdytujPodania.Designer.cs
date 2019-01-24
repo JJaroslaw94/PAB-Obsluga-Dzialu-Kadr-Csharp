@@ -36,9 +36,9 @@
             System.Windows.Forms.Label mIEJSCE_ZAMIESZKANIALabel;
             System.Windows.Forms.Label dLUGOSC_STAZULabel;
             System.Windows.Forms.Label tELEFONLabel;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EdytujPodania));
             System.Windows.Forms.Label label11;
             System.Windows.Forms.Label label13;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EdytujPodania));
             this.nAZWA_DZIALULabel1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
@@ -75,23 +75,6 @@
             nAZWA_DZIALULabel.Size = new System.Drawing.Size(41, 13);
             nAZWA_DZIALULabel.TabIndex = 51;
             nAZWA_DZIALULabel.Text = "Działu:";
-            // 
-            // nAZWA_DZIALULabel1
-            // 
-            this.nAZWA_DZIALULabel1.Location = new System.Drawing.Point(382, 28);
-            this.nAZWA_DZIALULabel1.Name = "nAZWA_DZIALULabel1";
-            this.nAZWA_DZIALULabel1.Size = new System.Drawing.Size(100, 23);
-            this.nAZWA_DZIALULabel1.TabIndex = 52;
-            this.nAZWA_DZIALULabel1.Text = "label4";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(117, 28);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(65, 13);
-            this.label2.TabIndex = 49;
-            this.label2.Text = "Stanowisko:";
             // 
             // iMIE_PRACOWNIKALabel
             // 
@@ -155,6 +138,41 @@
             tELEFONLabel.Size = new System.Drawing.Size(86, 13);
             tELEFONLabel.TabIndex = 48;
             tELEFONLabel.Text = "Data otrzymania:";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Location = new System.Drawing.Point(147, 239);
+            label11.Name = "label11";
+            label11.Size = new System.Drawing.Size(32, 13);
+            label11.TabIndex = 72;
+            label11.Text = "Stan:";
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Location = new System.Drawing.Point(133, 264);
+            label13.Name = "label13";
+            label13.Size = new System.Drawing.Size(46, 13);
+            label13.TabIndex = 74;
+            label13.Text = "Telefon:";
+            // 
+            // nAZWA_DZIALULabel1
+            // 
+            this.nAZWA_DZIALULabel1.Location = new System.Drawing.Point(382, 28);
+            this.nAZWA_DZIALULabel1.Name = "nAZWA_DZIALULabel1";
+            this.nAZWA_DZIALULabel1.Size = new System.Drawing.Size(100, 23);
+            this.nAZWA_DZIALULabel1.TabIndex = 52;
+            this.nAZWA_DZIALULabel1.Text = "label4";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(117, 28);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(65, 13);
+            this.label2.TabIndex = 49;
+            this.label2.Text = "Stanowisko:";
             // 
             // button1
             // 
@@ -278,15 +296,6 @@
             this.label10.TabIndex = 73;
             this.label10.Text = "label10";
             // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Location = new System.Drawing.Point(147, 239);
-            label11.Name = "label11";
-            label11.Size = new System.Drawing.Size(32, 13);
-            label11.TabIndex = 72;
-            label11.Text = "Stan:";
-            // 
             // label12
             // 
             this.label12.AutoSize = true;
@@ -295,15 +304,6 @@
             this.label12.Size = new System.Drawing.Size(41, 13);
             this.label12.TabIndex = 75;
             this.label12.Text = "label12";
-            // 
-            // label13
-            // 
-            label13.AutoSize = true;
-            label13.Location = new System.Drawing.Point(133, 264);
-            label13.Name = "label13";
-            label13.Size = new System.Drawing.Size(46, 13);
-            label13.TabIndex = 74;
-            label13.Text = "Telefon:";
             // 
             // EdytujPodania
             // 
@@ -338,6 +338,7 @@
             this.Controls.Add(tELEFONLabel);
             this.Name = "EdytujPodania";
             this.Text = "EdytujPodania";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.EdytujPodania_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

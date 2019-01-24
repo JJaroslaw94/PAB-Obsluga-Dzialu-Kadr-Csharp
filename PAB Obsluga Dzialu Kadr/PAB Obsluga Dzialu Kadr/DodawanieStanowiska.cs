@@ -66,5 +66,10 @@ namespace PAB_Obsluga_Dzialu_Kadr
             PBDA.Show();
             this.Close();
         }
+
+        private void DodawanieStanowiska_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

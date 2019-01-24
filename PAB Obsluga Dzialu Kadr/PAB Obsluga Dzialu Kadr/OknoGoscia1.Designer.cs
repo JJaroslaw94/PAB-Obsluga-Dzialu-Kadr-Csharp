@@ -247,6 +247,7 @@
             this.Controls.Add(this.buttonPowrotuDoMenu);
             this.Name = "OknoGoscia1";
             this.Text = "Oferty";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.OknoGoscia1_FormClosing);
             this.Load += new System.EventHandler(this.OknoGoscia1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.oFERTYBindingSource)).EndInit();

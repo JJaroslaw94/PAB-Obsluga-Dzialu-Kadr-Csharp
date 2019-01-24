@@ -209,6 +209,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Dodawanie_Pracownika";
             this.Text = "Dodawanie_Pracownika";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Dodawanie_Pracownika_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

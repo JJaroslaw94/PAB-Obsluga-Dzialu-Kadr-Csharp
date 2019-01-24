@@ -62,5 +62,9 @@ namespace PAB_Obsluga_Dzialu_Kadr
             podniesienie.Show();
         }
 
+        private void OknoAdministratora1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

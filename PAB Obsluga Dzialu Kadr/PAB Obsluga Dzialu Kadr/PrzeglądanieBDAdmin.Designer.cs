@@ -523,6 +523,7 @@
             this.Controls.Add(this.panel3);
             this.Name = "PrzeglądanieBDAdmin";
             this.Text = "PrzeglądanieBDAdmin";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.PrzeglądanieBDAdmin_FormClosing);
             this.Load += new System.EventHandler(this.PrzeglądanieBDAdmin_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
